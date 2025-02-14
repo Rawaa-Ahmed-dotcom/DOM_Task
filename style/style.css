@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    background-color: #F4CCE9;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    padding-block: 45em;
+    flex-direction: column;
+    padding-inline: 7em;
+}
+body > h2 {
+    color: #56021F;
+    font-size: 2em;
+}
+.container {
+    
+    display: flex;
+    gap: 2em;
+    border-radius: 12px;
+    flex-wrap: wrap;
+    padding: 1.5em;
+    
+}
+.container .card {
+    width: calc((100% - 4em) / 3);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #D17D98;
+}
+.container .card .image {
+    width: 100%;
+}
+.container .card .image img{
+    width: 100%;
+    object-fit: contain;
+}
+.container .card .text {
+    padding: 1em;
+}
+.container .card .text h2 {
+    color: white;
+    font-size: 1em;
+}
+.container .card .text p {
+    color: #999999;
+}
+@media(max-width: 1024px) {
+    .container .card {
+        width: calc((100% - 2em) / 2);
+    }
+}
+@media(max-width: 767px) {
+    .container .card {
+        width: 100%;
+    }
+}
